@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 
-class LogoWidget extends StatelessWidget {
+class ImagesConstructror extends StatelessWidget {
   final String imagePath;
   final double width;
   final double height;
   final double top;
   final double left;
+  final double borderRadius;
 
-  const LogoWidget({
-    Key? key,
+  const ImagesConstructror({
+    super.key,
     required this.imagePath,
     this.width = 10.0,
     this.height = 10.0,
     this.top = 0.0,
     this.left = 0.0,
-  }) : super(key: key);
+    this.borderRadius = 8.0,
+  });
 
   @override
   Widget build(BuildContext context) {

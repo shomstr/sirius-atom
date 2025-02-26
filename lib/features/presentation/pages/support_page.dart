@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:sirius/utils/colors.dart';
 
-class RegistrationPage extends StatefulWidget {
-  const RegistrationPage({super.key});
+class SupportPage extends StatefulWidget {
+  const SupportPage({super.key});
 
   @override
-  State<RegistrationPage> createState() => _RegistrationPage();
+  State<SupportPage> createState() => _SupportPageState();
 }
 
-class _RegistrationPage extends State<RegistrationPage> {
+class _SupportPageState extends State<SupportPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,4 +26,4 @@ class _RegistrationPage extends State<RegistrationPage> {
       backgroundColor: BackgroundColor,
     );
   }
-}
+} 
