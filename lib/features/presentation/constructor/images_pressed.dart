@@ -7,7 +7,7 @@ class LogoWidget extends StatelessWidget {
   final double top;
   final double left;
   final double borderRadius;
-  final VoidCallback? onTap; // Добавлен параметр для обработки нажатия
+  final VoidCallback? onTap; 
 
   const LogoWidget({
     super.key,
@@ -17,13 +17,13 @@ class LogoWidget extends StatelessWidget {
     this.top = 0.0,
     this.left = 0.0,
     this.borderRadius = 8.0,
-    this.onTap, // Добавлен параметр onTap
+    this.onTap, 
   });
 
   @override
   Widget build(BuildContext context) {
-    return InkWell( // Обернули Image.asset в InkWell
-      onTap: onTap, // Обработчик нажатия
+    return InkWell( 
+      onTap: onTap, 
       child: ConstrainedBox(
         constraints: BoxConstraints(
           maxWidth: width,
