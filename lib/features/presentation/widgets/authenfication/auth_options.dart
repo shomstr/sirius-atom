@@ -3,7 +3,6 @@ import 'package:sirius/features/presentation/pages/authenfication/login/by_mail.
 import 'package:sirius/features/presentation/pages/authenfication/login/login_page.dart';
 import 'package:sirius/features/presentation/pages/authenfication/registration/by_mail.dart';
 import 'package:sirius/features/presentation/pages/authenfication/registration/registration_page.dart';
-import 'package:sirius/features/presentation/widgets/email/email.dart';
 
 import '../../constructor/buttons_constructor.dart';
 

@@ -1,11 +1,16 @@
+/*
+  Кнопки для входа
+*/
+
 import 'package:flutter/material.dart';
+
+import 'package:sirius/features/presentation/constructor/buttons_constructor.dart';
 import 'package:sirius/features/presentation/pages/authenfication/login/login_page.dart';
 import 'package:sirius/features/presentation/pages/authenfication/registration/registration_page.dart';
 
-import '../../constructor/buttons_constructor.dart';
 
-class MainButtons extends StatelessWidget {
-  const MainButtons({super.key});
+class AuthButtons extends StatelessWidget {
+  const AuthButtons({super.key});
 
   @override
   Widget build(BuildContext context) {

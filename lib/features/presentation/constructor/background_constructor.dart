@@ -1,3 +1,7 @@
+/*
+  Создание заднего фона
+*/
+
 import 'package:flutter/material.dart';
 import 'package:sirius/utils/colors.dart';
 
