@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sirius/features/presentation/widgets/map/map.dart';
+// import 'package:sirius/features/presentation/widgets/map/map.dart';
 import 'package:yandex_maps_mapkit_lite/init.dart' as init;
 
 import 'package:sirius/features/presentation/pages/start_page.dart';
