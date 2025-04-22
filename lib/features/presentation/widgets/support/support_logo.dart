@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:sirius/features/presentation/pages/support_page.dart';
+// import 'package:sirius/features/presentation/pages/support_page.dart'; NotImplemented
 import 'package:sirius/features/presentation/constructor/images_constructor.dart';
 
 
@@ -17,7 +17,8 @@ class SupportLogo extends StatelessWidget {
       imagePath: 'assets/images/support_button.png',
       width: 100,
       height: 100,
-      page: SupportPage(),
+      // page: SupportPage(), NotImplemented
+      onPressed: () {},
     );
   }
 }

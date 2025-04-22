@@ -3,7 +3,7 @@ import 'package:sirius/features/presentation/constructor/buttons_constructor.dar
 import 'package:sirius/features/presentation/pages/authenfication/login/get_code_page.dart';
 import 'package:sirius/features/presentation/pages/authenfication/registration/get_code_page.dart';
 import 'package:sirius/features/presentation/widgets/email/email_input.dart';
-import 'package:sirius/utils/colors.dart'; // Импортируем цвета
+import 'package:sirius/utils/theme.dart'; // Импортируем цвета
 
 class EmailInputPage extends StatefulWidget {
   final bool isRegistration;

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sirius/utils/colors.dart';
 
 class SupportPage extends StatefulWidget {
   const SupportPage({super.key});
@@ -11,7 +10,7 @@ class SupportPage extends StatefulWidget {
 class _SupportPageState extends State<SupportPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( // TODO: remake this page
       body: Center(
         child: Column(
           children: [
@@ -23,7 +22,6 @@ class _SupportPageState extends State<SupportPage> {
           ],
         ),
       ),
-      backgroundColor: BackgroundColor,
     );
   }
 } 

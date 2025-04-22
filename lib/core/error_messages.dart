@@ -1,3 +1,7 @@
+/*
+  Виджет ошибки
+*/
+
 import 'package:flutter/material.dart';
 
 class ErrorMessage extends StatelessWidget {
@@ -14,7 +18,9 @@ class ErrorMessage extends StatelessWidget {
 
     return Text(
       message,
-      style: const TextStyle(color: Colors.red),
+      style: TextStyle(
+        color: Theme.of(context).colorScheme.error // TODO: replace with container or smth
+      ),
     );
   }
 }
