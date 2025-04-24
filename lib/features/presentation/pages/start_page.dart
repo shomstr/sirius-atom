@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'package:sirius/features/presentation/pages/authenfication/login_menu.dart';
+import 'package:sirius/features/presentation/pages/authenfication/login_page.dart';
 import 'package:sirius/features/presentation/widgets/support/support_logo.dart';
 import 'package:sirius/features/presentation/constructor/background_constructor.dart';
 
@@ -22,7 +22,7 @@ class StartPage extends StatelessWidget {
           ),
 
           Positioned.fill(
-            child: LoginMenu(),
+            child: LoginPage(),
           ),
           
           Positioned.fill(

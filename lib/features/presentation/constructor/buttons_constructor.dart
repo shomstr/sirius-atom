@@ -8,23 +8,21 @@
     3  | height       | double             | Высота кнопки
     4  | width        | double             | Ширина кнопки
     5  | padding      | EdgeInsetsGeometry | Отступ внутри от текста
-    6  | top          | double             | Отступ сверху
-    7  | left         | double             | Отступ слева
-    8  | borderRadius | BorderRadius       | Закругление кнопки
-    9  | page         | Widget             | Страница для переадресации при нажатии
-    10 | onPressed    | voidCallback       | Коллбэк при нажатии на кнопку (важнее чем переадресация)
+    6  | margin       | EdgeInsetsGeometry | Отстпуы снаружи
+    7  | borderRadius | BorderRadius       | Закругление кнопки
+    8  | page         | Widget             | Страница для переадресации при нажатии
+    9  | onPressed    | VoidCallback       | Коллбэк при нажатии на кнопку (важнее чем переадресация)
 */
 
 import 'package:flutter/material.dart';
 
-class DefaultButton extends StatelessWidget {
+class DefaultButton extends StatelessWidget { // TODO: replace fontSize with text style for more settings
   final String text;
   final double fontSize;
   final double height;
   final double width;
   final EdgeInsetsGeometry padding;
-  final double top;
-  final double left;
+  final EdgeInsetsGeometry margin;
   final BorderRadius borderRadius;
   final Widget? page;
   final VoidCallback? onPressed; 
@@ -36,8 +34,7 @@ class DefaultButton extends StatelessWidget {
     this.height = 50,
     this.width = double.infinity,
     this.padding = const EdgeInsets.all(8),
-    this.top = 0,
-    this.left = 0,
+    this.margin = const EdgeInsets.all(0),
     this.borderRadius = const BorderRadius.all(Radius.circular(8)), // Вызываем BorderRadius.all а не BorderRadius.circular, чтобы было константой
     this.page,
     this.onPressed, 
@@ -48,7 +45,7 @@ class DefaultButton extends StatelessWidget {
     ColorScheme colorScheme = Theme.of(context).colorScheme;
 
     return Container(
-      margin: EdgeInsets.only(top: top, left: left),
+      margin: margin,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           fixedSize: Size(width, height),

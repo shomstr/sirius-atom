@@ -20,7 +20,13 @@ ThemeData appTheme = ThemeData(
   colorScheme: appColorScheme,
   textTheme: TextTheme(
     displayLarge: TextStyle(
-      fontSize: 35,
-    )
+      fontSize: 30,
+    ),
+    displayMedium: TextStyle(
+      fontSize: 20,
+    ),
+    displaySmall: TextStyle(
+      fontSize: 15,
+    ),
   )
 );
