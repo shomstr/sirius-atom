@@ -8,7 +8,7 @@ class DefaultMap extends StatefulWidget {
   const DefaultMap({super.key});
 
   @override
-  State<DefaultMap> createState() => DefaultMapState();
+  DefaultMapState createState() => DefaultMapState();
 }
 
 class DefaultMapState extends State<DefaultMap> {
