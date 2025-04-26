@@ -23,7 +23,7 @@ ThemeData appTheme = ThemeData(
       fontSize: 30,
     ),
     displayMedium: TextStyle(
-      fontSize: 20,
+      fontSize: 17,
     ),
     displaySmall: TextStyle(
       fontSize: 15,
