@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:sirius/features/presentation/constructor/buttons_constructor.dart';
 import 'package:sirius/features/presentation/widgets/authenfication/auth_inputs.dart';
-
 import 'package:sirius/features/presentation/widgets/authenfication/auth_options.dart';
+import 'package:sirius/features/presentation/widgets/map/map.dart' // TODO: move to constructor
 
 class LoginPage extends StatelessWidget {
   final GlobalKey<AuthInputsState> inputsKey = GlobalKey<AuthInputsState>();
@@ -67,7 +68,10 @@ class LoginPage extends StatelessWidget {
                 Expanded(
                   child: DefaultButton(
                     text: "Войти",
-                    onPressed: () {}, // TODO: navigation to page
+                    page: DefaultMap(),
+                    //onPressed: () {
+                      // TODO: add validation
+                    //},
                   ),
                 ),
               ],
